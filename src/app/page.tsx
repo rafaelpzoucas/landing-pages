@@ -3,7 +3,6 @@ import { CallToAction } from './call-to-action'
 import { Cover } from './cover'
 import { Features } from './features'
 import { Header } from './header'
-import { Metrics } from './metrics'
 import { SocialProof } from './social-proof'
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
       <Header />
       <Cover />
       <div className="relative z-20 bg-background">
-        <Metrics />
+        {/* <Metrics /> */}
         <Features />
         <CallToAction />
         <Benefits />

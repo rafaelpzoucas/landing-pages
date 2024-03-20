@@ -1,11 +1,15 @@
 import { Section } from '@/components/section'
 import { Card } from '@/components/ui/card'
 import { features } from '@/data/features'
+import { cn } from '@/lib/utils'
+import { Spectral } from 'next/font/google'
+
+const spectral = Spectral({ weight: ['400', '600'], subsets: ['latin'] })
 
 export function Features() {
   return (
     <Section className="flex flex-col items-center justify-center gap-16 md:gap-32">
-      <h1 className="text-2xl md:text-4xl font-bold">
+      <h1 className={cn(spectral.className, 'text-2xl md:text-4xl font-bold')}>
         Conheça nossos serviços
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16 max-w-7xl">

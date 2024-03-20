@@ -1,5 +1,9 @@
 import { Section } from '@/components/section'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
+import { profile } from '@/data/profile'
+import { cn } from '@/lib/utils'
+import Link from 'next/link'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export function CallToAction() {
   return (
@@ -9,9 +13,15 @@ export function CallToAction() {
         Agende uma reunião para discutir o seu caso.
       </h1>
 
-      <Button variant="secondary" size={'lg'} className="mt-10">
-        Entrar em contato
-      </Button>
+      <Link
+        href={`https:/wa.me/${profile.phone}`}
+        className={cn(
+          buttonVariants({ variant: 'secondary', size: 'lg' }),
+          'mt-10',
+        )}
+      >
+        <FaWhatsapp className="mr-2 text-lg" /> Entre em contato agora
+      </Link>
     </Section>
   )
 }
