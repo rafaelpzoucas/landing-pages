@@ -3,18 +3,15 @@ import { NavigationItemsType } from '@/components/nav'
 export const navItems: NavigationItemsType[] = [
   {
     title: 'Home',
-    href: '/',
+    href: '#cover',
   },
   {
     title: 'Serviços',
-    href: '',
-    subItems: [
-      {
-        title: 'Carpintaria',
-        description: 'Serviços de carpintaria',
-        href: '#',
-      },
-    ],
+    href: '#features',
+  },
+  {
+    title: 'Benefícios',
+    href: '#benefits',
   },
   {
     title: 'Contato',

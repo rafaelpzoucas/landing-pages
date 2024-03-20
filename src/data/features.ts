@@ -1,40 +1,61 @@
 import {
+  AtSign,
   Baby,
   BriefcaseBusiness,
-  ClipboardCheck,
-  FilePenLine,
+  CircleDollarSign,
+  Handshake,
+  HeartPulse,
   Scale,
+  Shield,
 } from 'lucide-react'
 
 export const features = [
   {
     icon: BriefcaseBusiness,
-    title: 'Assistência Trabalhista',
+    title: 'Direito Trabalhista',
     description:
-      'Nossos serviços trabalhistas abrangem questões como hora extra, adicional de insalubridade, benefícios do INSS e muito mais. Estamos aqui para proteger seus direitos e garantir que você receba o tratamento justo que merece.',
+      'Assessoria em questões trabalhistas, como rescisões contratuais, ações trabalhistas, consultoria em relações de trabalho, entre outros.',
   },
   {
-    icon: ClipboardCheck,
-    title: 'Consultoria Jurídica Personalizada',
+    icon: HeartPulse,
+    title: 'Direito Médico e da Saúde',
     description:
-      'Fornecemos consultoria jurídica personalizada para ajudar a entender seus direitos, avaliar suas opções legais e desenvolver estratégias eficazes para resolver seu caso.',
-  },
-  {
-    icon: FilePenLine,
-    title: 'Elaboração de Documentos Legais',
-    description:
-      'Auxiliamos na elaboração e revisão de uma variedade de documentos legais, incluindo contratos, testamentos, procurações, acordos pré-nupciais e muito mais.',
-  },
-  {
-    icon: Baby,
-    title: 'Questões de Família',
-    description:
-      'Entendemos as complexidades das questões familiares, incluindo pensão alimentícia e questões relacionadas ao INSS. Orientação especializada e representação eficaz em assuntos delicados que afetam sua família.',
+      'Assessoria jurídica em questões relacionadas ao direito médico e da saúde, como responsabilidade médica, direitos do paciente, legislação sanitária, entre outros.',
   },
   {
     icon: Scale,
-    title: 'Representação em Tribunal',
+    title: 'Direito Civil',
     description:
-      'Oferecemos representação dedicada e competente em tribunal, defendendo seus direitos e interesses com habilidade e comprometimento.',
+      'Atuação em diversas áreas do direito civil, como contratos, responsabilidade civil, direito imobiliário, entre outros.',
+  },
+  {
+    icon: Baby,
+    title: 'Direito de Família e Sucessões',
+    description:
+      'Assessoria em questões familiares, como divórcio, pensão alimentícia, guarda dos filhos, inventários, testamentos, entre outros.',
+  },
+  {
+    icon: Shield,
+    title: 'Direito do Consumidor',
+    description:
+      'Defesa dos direitos dos consumidores, como ações contra fornecedores, indenizações por danos materiais e morais, entre outros.',
+  },
+  {
+    icon: CircleDollarSign,
+    title: 'Direito Previdenciário',
+    description:
+      'Atuação em questões relacionadas à previdência social, como aposentadorias, pensões, benefícios por incapacidade, entre outros.',
+  },
+  {
+    icon: Handshake,
+    title: 'Direito Empresarial',
+    description:
+      'Assessoria jurídica em questões empresariais, como constituição de empresas, contratos empresariais, litígios societários, entre outros.',
+  },
+  {
+    icon: AtSign,
+    title: 'Direito Digital',
+    description:
+      'Assessoria jurídica em questões relacionadas ao direito digital, como proteção de dados, contratos eletrônicos, crimes cibernéticos, entre outros.',
   },
 ]
