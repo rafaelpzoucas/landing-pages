@@ -24,10 +24,9 @@ export function Cover() {
         >
           Segurança legal para seus direitos essenciais.
         </h1>
-        <p className="text-muted-foreground md:text-2xl md:max-w-3xl">
-          Defenda seus interesses legais com um profissional especializado em
-          questões trabalhistas e familiares, comprometido em oferecer
-          representação de alta qualidade.
+        <p className="text-muted-foreground md:text-xl md:max-w-3xl">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          quia, placeat harum consectetur eligendi nemo voluptatibus
         </p>
         <Button size={'lg'}>
           <FaWhatsapp className="mr-2 text-lg" /> Entre em contato agora
