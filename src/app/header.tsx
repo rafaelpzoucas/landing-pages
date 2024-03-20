@@ -29,7 +29,7 @@ export function Header() {
       <div className="flex flex-row items-center justify-between w-full max-w-7xl">
         <div className="flex flex-row items-center gap-2">
           <Scale />
-          <strong className="text-xl uppercase">Dr. Advogado</strong>
+          <strong className="text-xl uppercase">Dr. Caio Ramão</strong>
         </div>
 
         <Nav items={navItems} />
