@@ -16,13 +16,14 @@ export function Cover() {
       </div>
 
       <aside className="relative z-10 w-full md:max-w-5xl h-screen flex flex-col items-center justify-center text-center gap-4 md:gap-8 p-8">
+        <span>Segurança legal</span>
         <h1
           className={cn(
             spectral.className,
-            'text-4xl md:text-7xl font-bold text-primary',
+            'text-4xl md:text-7xl font-bold text-primary uppercase',
           )}
         >
-          Segurança legal para seus direitos essenciais.
+          Para seus direitos essenciais.
         </h1>
         <p className="text-muted-foreground md:text-xl md:max-w-3xl">
           Defenda seus interesses legais com um profissional especializado,

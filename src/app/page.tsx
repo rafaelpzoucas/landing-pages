@@ -3,7 +3,6 @@ import { CallToAction } from './call-to-action'
 import { Cover } from './cover'
 import { Features } from './features'
 import { Header } from './header'
-import { SocialProof } from './social-proof'
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
         <Features />
         <CallToAction />
         <Benefits />
-        <SocialProof />
+        {/* <SocialProof /> */}
       </div>
     </main>
   )
