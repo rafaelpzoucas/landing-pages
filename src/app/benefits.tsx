@@ -7,7 +7,10 @@ const spectral = Spectral({ weight: ['400', '600'], subsets: ['latin'] })
 
 export function Benefits() {
   return (
-    <Section className="flex flex-col items-center justify-center gap-16 md:gap-32">
+    <Section
+      id="benefits"
+      className="flex flex-col items-center justify-center gap-16 md:gap-32"
+    >
       <h1 className={cn(spectral.className, 'text-2xl md:text-4xl font-bold')}>
         Garantindo sua Tranquilidade e Segurança
       </h1>

@@ -9,7 +9,10 @@ const spectral = Spectral({ weight: ['400', '600'], subsets: ['latin'] })
 
 export function SocialProof() {
   return (
-    <Section className="flex flex-col items-center justify-center gap-16 md:gap-32">
+    <Section
+      id="social-proof"
+      className="flex flex-col items-center justify-center gap-16 md:gap-32"
+    >
       <h1 className={cn(spectral.className, 'text-2xl md:text-4xl font-bold')}>
         Experiências de Sucesso com Nossa Assistência Jurídica
       </h1>
