@@ -1,3 +1,4 @@
+import { FeatureType } from '@/model/features'
 import {
   AtSign,
   Baby,
@@ -9,7 +10,7 @@ import {
   Shield,
 } from 'lucide-react'
 
-export const features = [
+export const features: FeatureType[] = [
   {
     icon: BriefcaseBusiness,
     title: 'Direito Trabalhista',
