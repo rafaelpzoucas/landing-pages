@@ -1,10 +1,8 @@
+import { layout } from '@/components/layout'
 import { ThemeProvider } from '@/components/theme-provider'
 import { profile } from '@/data/profile'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: `${profile.name} | ${profile.role}`,
@@ -18,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={layout.fonts.default.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
