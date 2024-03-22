@@ -15,6 +15,6 @@ export const navItems: NavigationItemsType[] = [
   },
   {
     title: 'Contato',
-    href: '#contact',
+    href: '#cta',
   },
 ]
