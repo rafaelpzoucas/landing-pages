@@ -1,11 +1,9 @@
+import { layout } from '@/components/layout'
 import { Section } from '@/components/section'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card } from '@/components/ui/card'
 import { testimonials } from '@/data/social-proof'
 import { cn } from '@/lib/utils'
-import { Spectral } from 'next/font/google'
-
-const spectral = Spectral({ weight: ['400', '600'], subsets: ['latin'] })
 
 export function SocialProof() {
   return (
@@ -13,8 +11,13 @@ export function SocialProof() {
       id="social-proof"
       className="flex flex-col items-center justify-center gap-16 md:gap-32"
     >
-      <h1 className={cn(spectral.className, 'text-2xl md:text-4xl font-bold')}>
-        Experiências de Sucesso com Nossa Assistência Jurídica
+      <h1
+        className={cn(
+          layout.fonts.highlight.className,
+          'text-2xl md:text-4xl font-bold uppercase',
+        )}
+      >
+        Depoimentos de clientes
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-7xl">
         {testimonials.map((testimonial, index) => (
