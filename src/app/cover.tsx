@@ -17,7 +17,7 @@ export function Cover() {
         <Image src={hero} alt="" fill className="object-cover opacity-30" />
       </div>
 
-      <aside className="relative z-10 w-full md:max-w-5xl h-screen flex flex-col items-center justify-center text-center gap-4 md:gap-8 p-8">
+      <aside className="relative z-10 w-full md:max-w-7xl h-screen flex flex-col items-start justify-center text-left gap-4 md:gap-4 p-8">
         <span>{cover.subtitle}</span>
         <h1
           className={cn(

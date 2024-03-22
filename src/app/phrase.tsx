@@ -1,0 +1,36 @@
+import { layout } from '@/components/layout'
+import { Section } from '@/components/section'
+import { cn } from '@/lib/utils'
+
+export function Phrase() {
+  return (
+    <Section className="flex flex-col items-center gap-8 w-full bg-white text-primary py-20 px-4">
+      <div className="flex flex-col items-start justify-center uppercase">
+        <h1
+          className={cn(
+            layout.fonts.highlight.className,
+            'text-2xl md:text-4xl font-bold',
+          )}
+        >
+          Gabriel Candela
+        </h1>
+        <h3 className="text-xs md:text-sm text-muted">Advogado criminalista</h3>
+      </div>
+
+      <p
+        className={cn(
+          layout.fonts.highlight.className,
+          'text-xl text-center md:text-3xl max-w-[700px]',
+        )}
+      >
+        O{' '}
+        <span className="italic font-bold">
+          &quot;Olho por olho e dente por dente&quot;
+        </span>{' '}
+        nada mais fará do que nos deixar todos cegos e desdentados.
+      </p>
+
+      <div className="w-3/4 max-w-[500px] h-1 bg-yellow-600"></div>
+    </Section>
+  )
+}

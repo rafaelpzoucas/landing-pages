@@ -4,8 +4,8 @@ import logoImg from '../../public/logo.png'
 
 export const profile: ProfileType = {
   logo: logoImg,
-  name: 'Advogado',
-  phone: '55999999999',
+  name: 'Gabriel Candela',
+  phone: '5518997731225',
   role: 'Advogado',
   about:
     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nobis porro repellendus quos et saepe dolorem dignissimos mollitia ea neque, libero perferendis aut corrupti ex vel? Ratione voluptas est perferendis!',
