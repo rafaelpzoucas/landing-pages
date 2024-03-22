@@ -1,11 +1,11 @@
 import { ProfileType } from '@/model/profile'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
-import logoImg from '../../public/logo.png'
+import logoImg from '../../public/logo.svg'
 
 export const profile: ProfileType = {
   logo: logoImg,
-  name: 'Advogado',
-  phone: '55999999999',
+  name: 'Caio Ramão',
+  phone: '5518996603136',
   role: 'Advogado',
   about:
     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nobis porro repellendus quos et saepe dolorem dignissimos mollitia ea neque, libero perferendis aut corrupti ex vel? Ratione voluptas est perferendis!',

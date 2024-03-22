@@ -1,8 +1,8 @@
 import { CoverType } from '@/model/cover'
 
 export const cover: CoverType = {
-  headline: 'Lorem ipsum dolor sit',
-  subtitle: 'Lorem ipsum dolor',
+  headline: 'Segurança legal para seus direitos essenciais',
+  subtitle: '',
   paragraph:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia, placeat harum consectetur eligendi nemo voluptatibus',
+    'Defenda seus interesses legais com um profissional especializado, comprometido em oferecer representação de alta qualidade.',
 }

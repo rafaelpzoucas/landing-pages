@@ -1,4 +1,5 @@
 import { FaWhatsapp } from 'react-icons/fa'
+import { profile } from './profile'
 
 export const cta = {
   title: ' Agende uma reunião para discutir o seu caso.',
@@ -7,7 +8,7 @@ export const cta = {
     {
       icon: FaWhatsapp,
       button_text: 'Entre em contato agora',
-      link: 'https://wa.me/5518998261736',
+      link: `https://wa.me/${profile.phone}`,
     },
   ],
 }
