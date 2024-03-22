@@ -60,7 +60,7 @@ export function Services() {
       className="flex flex-col items-center justify-center gap-16 md:gap-32"
     >
       <div className="relative flex flex-col gap-16 md:gap-32 max-w-7xl">
-        <div className="bg-primary w-full max-w-[200px] md:max-w-[500px] h-4 md:h8"></div>
+        <div className="-ml-16 bg-primary w-full max-w-[200px] md:max-w-[500px] h-4 md:h8"></div>
         <h1
           className={cn(
             layout.fonts.highlight.className,
