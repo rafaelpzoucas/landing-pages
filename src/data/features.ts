@@ -11,7 +11,7 @@ import {
 } from 'lucide-react'
 
 export const features: FeatureType = {
-  title: 'Conheça nossos serviços',
+  title: 'Protegendo Seus Interesses com Excelência',
   data: [
     {
       icon: BriefcaseBusiness,

@@ -2,7 +2,7 @@ import { BenefitType } from '@/model/benefits'
 import { Gavel, Handshake, Heart, Scale, Shield } from 'lucide-react'
 
 export const benefits: BenefitType = {
-  title: 'Por que contratar nossos serviços?',
+  title: 'Garantindo sua Tranquilidade e Segurança',
   data: [
     {
       icon: Shield,
