@@ -8,7 +8,7 @@ export const profile: ProfileType = {
   phone: '5518996603136',
   role: 'Advogado',
   about:
-    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nobis porro repellendus quos et saepe dolorem dignissimos mollitia ea neque, libero perferendis aut corrupti ex vel? Ratione voluptas est perferendis!',
+    'Dedicando minha carreira à advocacia, sou um profissional comprometido em oferecer soluções jurídicas eficazes e personalizadas aos meus clientes. Com uma abordagem especializada para o seu caso, busco entender todas as suas necessidades e oferecer uma orientação legal sólida e acessível. Estou aqui para ajudá-lo juridicamente com confiança e tranquilidade. Sinta-se à vontade para entrar em contato e agendar uma consulta para discutir suas preocupações legais. O seu caso é a minha prioridade.',
   social: [
     {
       name: 'Facebook',
