@@ -3,13 +3,15 @@ import { buttonVariants } from '@/components/ui/button'
 import { footer } from '@/data/footer'
 import { profile } from '@/data/profile'
 import { cn } from '@/lib/utils'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from '../../public/logo.png'
 
 export function Footer() {
   return (
     <Section className="flex items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl w-full">
         {footer.about && (
           <div className="flex flex-col gap-6">
             <div className="flex flex-row items-center gap-2">
@@ -43,6 +45,23 @@ export function Footer() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         )}
+
+        <div className="flex flex-col gap-4 text-primary">
+          <Image src={logo} alt="" width={400} />
+
+          <div className="flex flex-row items-center gap-2 py-2">
+            <Phone className="w-5 h-5" />
+            <p>(18) 33293633</p>
+          </div>
+          <div className="flex flex-row items-center gap-2 py-2">
+            <Mail className="w-5 h-5" />
+            <p>email@email.com</p>
+          </div>
+          <div className="flex flex-row items-center gap-2 py-2">
+            <MapPin className="w-5 h-5" />
+            <p>Rua da saudade, 666</p>
+          </div>
+        </div>
       </div>
     </Section>
   )

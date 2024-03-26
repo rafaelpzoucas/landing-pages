@@ -25,7 +25,7 @@ export function Phrase() {
         nada mais fará do que nos deixar todos cegos e desdentados.
       </p>
 
-      <div className="w-3/4 max-w-[500px] h-1 bg-yellow-600"></div>
+      <div className="w-3/4 max-w-[500px] h-1 bg-primary"></div>
     </Section>
   )
 }

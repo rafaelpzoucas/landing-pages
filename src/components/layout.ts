@@ -1,12 +1,18 @@
-import { Inter, Tinos } from 'next/font/google'
+import {
+  Frank_Ruhl_Libre,
+  Montserrat
+} from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-const tinos = Tinos({ weight: ['400', '700'], subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
+const playfair = Frank_Ruhl_Libre({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+})
 
 export const layout = {
   fonts: {
-    default: inter,
-    highlight: tinos,
+    default: montserrat,
+    highlight: playfair,
   },
   header: false,
   cover: true,

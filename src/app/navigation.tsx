@@ -38,7 +38,7 @@ export function Navigation() {
             <div className="flex items-center justify-center w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
               <link.icon className="w-28 h-28" />
             </div>
-            <p className="uppercase md:text-xl font-bold text-yellow-700">
+            <p className="uppercase md:text-xl font-bold text-primary">
               {link.title}
             </p>
           </Link>
