@@ -51,15 +51,15 @@ export function Footer() {
 
           <div className="flex flex-row items-center gap-2 py-2">
             <Phone className="w-5 h-5" />
-            <p>(18) 33293633</p>
+            <p>{profile.phone}</p>
           </div>
           <div className="flex flex-row items-center gap-2 py-2">
             <Mail className="w-5 h-5" />
-            <p>email@email.com</p>
+            <p>{profile.email}</p>
           </div>
           <div className="flex flex-row items-center gap-2 py-2">
             <MapPin className="w-5 h-5" />
-            <p>Rua da saudade, 666</p>
+            <p>{profile.address}</p>
           </div>
         </div>
       </div>
