@@ -2,52 +2,62 @@ import { layout } from '@/components/layout'
 import { Section } from '@/components/section'
 import { profile } from '@/data/profile'
 import { cn } from '@/lib/utils'
-import { Scale } from 'lucide-react'
 import Link from 'next/link'
+
+import Image from 'next/image'
+import violenceIcon from '../../public/icons/10.svg'
+import criminalIcon from '../../public/icons/11.svg'
+import sentenceIcon from '../../public/icons/12.svg'
+import freedomIcon from '../../public/icons/13.svg'
+import drugsIcon from '../../public/icons/5.svg'
+import sexualIcon from '../../public/icons/6.svg'
+import fraudeIcon from '../../public/icons/7.svg'
+import stealIcon from '../../public/icons/8.svg'
+import restrictionIcon from '../../public/icons/9.svg'
 
 const services = [
   {
-    icon: Scale,
+    icon: drugsIcon,
     title: 'Tráfico de drogas',
     message: 'Fala truta quero falar sobre drogas',
   },
   {
-    icon: Scale,
+    icon: sexualIcon,
     title: 'Crimes sexuais',
     message: '#',
   },
   {
-    icon: Scale,
+    icon: fraudeIcon,
     title: 'Fraude',
     message: '#',
   },
   {
-    icon: Scale,
+    icon: stealIcon,
     title: 'Roubo ou furto',
     message: '#',
   },
   {
-    icon: Scale,
+    icon: restrictionIcon,
     title: 'Ordem de restrição',
     message: '#',
   },
   {
-    icon: Scale,
+    icon: violenceIcon,
     title: 'Violência doméstica',
     message: '#',
   },
   {
-    icon: Scale,
+    icon: criminalIcon,
     title: 'Defesa Criminal',
     message: '#',
   },
   {
-    icon: Scale,
+    icon: sentenceIcon,
     title: 'Execução da pena',
     message: '#',
   },
   {
-    icon: Scale,
+    icon: freedomIcon,
     title: 'Pedidos de liberdade',
     message: '#',
   },
@@ -76,7 +86,14 @@ export function Services() {
               key={index}
               className="flex flex-col items-center gap-2 md:gap-4 text-center w-full"
             >
-              <service.icon className="w-10 h-10 md:w-28 md:h-28" />
+              <div className="relative w-52 h-32">
+                <Image
+                  src={service.icon}
+                  alt=""
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <p className="text-sm md:text-2xl font-bold text-primary">
                 {service.title}
               </p>

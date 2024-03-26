@@ -4,27 +4,32 @@ import {
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel'
-import { MapPin, Newspaper, Phone, Users } from 'lucide-react'
 import Link from 'next/link'
+
+import Image from 'next/image'
+import articleIcon from '../../public/icons/1.svg'
+import phoneIcon from '../../public/icons/2.svg'
+import locationIcon from '../../public/icons/3.svg'
+import socialIcon from '../../public/icons/4.svg'
 
 const links = [
   {
-    icon: Newspaper,
+    icon: articleIcon,
     title: 'Artigos',
     link: '#articles',
   },
   {
-    icon: Phone,
+    icon: phoneIcon,
     title: 'Contato',
     link: '#footer',
   },
   {
-    icon: MapPin,
+    icon: locationIcon,
     title: 'Maps',
     link: '#footer',
   },
   {
-    icon: Users,
+    icon: socialIcon,
     title: 'Redes sociais',
     link: '#footer',
   },
@@ -41,7 +46,7 @@ export function Navigation() {
             className="flex flex-col gap-4 items-center justify-center"
           >
             <div className="flex items-center justify-center w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
-              <link.icon className="w-28 h-28" />
+              <Image src={link.icon} alt="" width={128} />
             </div>
             <p className="uppercase md:text-xl font-bold text-primary">
               {link.title}
@@ -56,10 +61,10 @@ export function Navigation() {
             <CarouselItem className="flex-[0_0_40%]" key={index}>
               <Link
                 href={link.link}
-                className="flex flex-col gap-4 items-center justify-center"
+                className="flex flex-col gap-4 items-center justify-center w-"
               >
                 <div className="flex items-center justify-center w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
-                  <link.icon className="w-10 h-10 md:w-28 md:h-28" />
+                  <Image src={link.icon} alt="" width={64} />
                 </div>
                 <p className="uppercase md:text-xl font-bold text-primary text-center">
                   {link.title}
