@@ -1,10 +1,10 @@
 import {
-  Frank_Ruhl_Libre,
-  Montserrat
+  Frank_Ruhl_Libre as FrankRuhlLibre,
+  Montserrat,
 } from 'next/font/google'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
-const playfair = Frank_Ruhl_Libre({
+const playfair = FrankRuhlLibre({
   weight: ['400', '700'],
   subsets: ['latin'],
 })

@@ -1,4 +1,9 @@
 import { Section } from '@/components/section'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel'
 import { MapPin, Newspaper, Phone, Users } from 'lucide-react'
 import Link from 'next/link'
 
@@ -28,7 +33,7 @@ const links = [
 export function Navigation() {
   return (
     <Section className="relative w-full p-8 md:p-20 !bg-white flex items-center justify-center">
-      <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-7xl">
+      <div className="hidden relative z-10 md:grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-7xl">
         {links.map((link, index) => (
           <Link
             href={link.link}
@@ -44,6 +49,25 @@ export function Navigation() {
           </Link>
         ))}
       </div>
+      <Carousel>
+        <CarouselContent className="relative z-10 w-full">
+          {links.map((link, index) => (
+            <CarouselItem className="flex-[0_0_40%]" key={index}>
+              <Link
+                href={link.link}
+                className="flex flex-col gap-4 items-center justify-center"
+              >
+                <div className="flex items-center justify-center w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
+                  <link.icon className="w-10 h-10 md:w-28 md:h-28" />
+                </div>
+                <p className="uppercase md:text-xl font-bold text-primary text-center">
+                  {link.title}
+                </p>
+              </Link>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
       <div className="absolute bottom-0 left-0 right-0 bg-background w-full h-4/5 md:h-3/5"></div>
     </Section>
   )
