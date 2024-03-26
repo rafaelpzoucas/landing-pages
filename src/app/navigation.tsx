@@ -1,24 +1,25 @@
 import { Section } from '@/components/section'
+import { MapPin, Newspaper, Phone, Users } from 'lucide-react'
 import Link from 'next/link'
 
 const links = [
   {
-    icon: '',
+    icon: Newspaper,
     title: 'Artigos',
     link: '#articles',
   },
   {
-    icon: '',
+    icon: Phone,
     title: 'Contato',
-    link: '#contact',
+    link: '#footer',
   },
   {
-    icon: '',
+    icon: MapPin,
     title: 'Maps',
     link: '#footer',
   },
   {
-    icon: '',
+    icon: Users,
     title: 'Redes sociais',
     link: '#footer',
   },
@@ -34,8 +35,8 @@ export function Navigation() {
             key={index}
             className="flex flex-col gap-4 items-center justify-center"
           >
-            <div className="w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
-              {link.icon}
+            <div className="flex items-center justify-center w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
+              <link.icon className="w-28 h-28" />
             </div>
             <p className="uppercase md:text-xl font-bold text-yellow-700">
               {link.title}
