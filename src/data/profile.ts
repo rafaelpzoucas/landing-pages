@@ -6,6 +6,8 @@ export const profile: ProfileType = {
   logo: logoImg,
   name: 'Gabriel Candela',
   phone: '5518997731225',
+  email: 'example@example.com',
+  address: 'Rua Do Escritório, 123',
   role: 'Advogado',
   about:
     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nobis porro repellendus quos et saepe dolorem dignissimos mollitia ea neque, libero perferendis aut corrupti ex vel? Ratione voluptas est perferendis!',
