@@ -49,8 +49,9 @@ export function Navigation() {
           </Link>
         ))}
       </div>
+
       <Carousel>
-        <CarouselContent className="relative z-10 w-full">
+        <CarouselContent className="relative z-10 w-full md:hidden">
           {links.map((link, index) => (
             <CarouselItem className="flex-[0_0_40%]" key={index}>
               <Link

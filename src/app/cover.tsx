@@ -7,6 +7,7 @@ import { cta } from '@/data/cta'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import hero from '../../public/hero-image.jpg'
+import logo from '../../public/logo.png'
 
 export function Cover() {
   const action = cta.actions[0]
@@ -17,12 +18,14 @@ export function Cover() {
         <Image src={hero} alt="" fill className="object-cover opacity-30" />
       </div>
 
-      <aside className="relative z-10 w-full md:max-w-7xl h-screen flex flex-col items-center md:items-start justify-center text-center md:text-left gap-4 md:gap-4 p-8">
+      <aside className="relative z-10 w-full md:max-w-6xl h-screen flex flex-col items-start justify-center text-left gap-4 md:gap-8 p-8">
+        <Image src={logo} alt="" width={400} />
+
         <span>{cover.subtitle}</span>
         <h1
           className={cn(
             layout.fonts.highlight.className,
-            'text-4xl md:text-7xl font-bold text-primary uppercase',
+            'text-4xl md:text-7xl font-bold text-primary uppercase max-w-4xl',
           )}
         >
           {cover.headline}
