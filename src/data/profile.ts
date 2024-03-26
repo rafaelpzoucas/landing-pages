@@ -7,7 +7,7 @@ export const profile: ProfileType = {
   name: 'Gabriel Candela',
   phone: '5518997731225',
   email: 'example@example.com',
-  address: 'Rua Do Escritório, 123',
+  address: 'Av. Rui Barbosa, 15 - Edifício Vieira Dias, Sala Nº 20',
   role: 'Advogado',
   about:
     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nobis porro repellendus quos et saepe dolorem dignissimos mollitia ea neque, libero perferendis aut corrupti ex vel? Ratione voluptas est perferendis!',
