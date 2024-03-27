@@ -3,13 +3,13 @@ import { Section } from '@/components/section'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 
-import logo from '../../public/logo.png'
+import logoWhite from '../../public/logo-white.svg'
 
 export function Phrase() {
   return (
     <Section className="flex flex-col items-center gap-8 w-full bg-white text-primary py-20 px-4">
       <div className="flex flex-col items-start justify-center uppercase">
-        <Image src={logo} alt="" width={400} />
+        <Image src={logoWhite} alt="" width={400} />
       </div>
 
       <p

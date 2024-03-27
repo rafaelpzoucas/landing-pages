@@ -6,7 +6,7 @@ export const cta = {
   actions: [
     {
       icon: FaWhatsapp,
-      button_text: 'Entre em contato agora',
+      button_text: 'Entre em contato',
       link: 'https://wa.me/5518998261736',
     },
   ],

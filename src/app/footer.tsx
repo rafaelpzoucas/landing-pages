@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../public/logo.png'
+import logo from '../../public/logo.svg'
 
 export function Footer() {
   return (
