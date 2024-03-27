@@ -15,7 +15,12 @@ export function Footer() {
         {footer.about && (
           <div className="flex flex-col gap-6">
             <div className="flex flex-row items-center gap-2">
-              <Image src={profile.logo} alt="" width={150} height={47} />
+              <Image
+                src={profile.logo}
+                alt={profile.name}
+                width={150}
+                height={47}
+              />
             </div>
 
             <p className="text-muted-foreground">{profile.about}</p>
@@ -47,7 +52,7 @@ export function Footer() {
         )}
 
         <div className="flex flex-col gap-4 text-primary">
-          <Image src={logo} alt="" width={400} />
+          <Image src={logo} alt={profile.name} width={400} />
 
           <div className="flex flex-row items-center gap-2 py-2">
             <Phone className="w-5 h-5" />

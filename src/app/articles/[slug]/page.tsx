@@ -15,7 +15,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         <div className="fixed w-full h-[400px]">
           <Image
             src={article.cover_img}
-            alt=""
+            alt={article.title}
             fill
             className="object-cover opacity-30"
           />

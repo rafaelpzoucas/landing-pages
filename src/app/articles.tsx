@@ -39,7 +39,7 @@ export function Articles() {
               <div className="relative w-full h-[200px]">
                 <Image
                   src={article.cover_img}
-                  alt=""
+                  alt={article.title}
                   fill
                   className="object-cover"
                 />

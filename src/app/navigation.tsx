@@ -46,7 +46,7 @@ export function Navigation() {
             className="flex flex-col gap-4 items-center justify-center"
           >
             <div className="flex items-center justify-center w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
-              <Image src={link.icon} alt="" width={128} />
+              <Image src={link.icon} alt={link.title} width={128} />
             </div>
             <p className="uppercase md:text-xl font-bold text-primary">
               {link.title}
@@ -64,7 +64,7 @@ export function Navigation() {
                 className="flex flex-col gap-4 items-center justify-center w-"
               >
                 <div className="flex items-center justify-center w-full md:w-3/4 aspect-square bg-secondary rounded-3xl">
-                  <Image src={link.icon} alt="" width={64} />
+                  <Image src={link.icon} alt={link.title} width={64} />
                 </div>
                 <p className="uppercase md:text-xl font-bold text-primary text-center">
                   {link.title}

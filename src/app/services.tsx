@@ -97,7 +97,7 @@ export function Services() {
               <div className="relative w-32 md:w-52 h-32 md:h-32">
                 <Image
                   src={service.icon}
-                  alt=""
+                  alt={service.title}
                   fill
                   className="object-cover"
                 />
