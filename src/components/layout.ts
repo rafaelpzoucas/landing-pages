@@ -1,12 +1,15 @@
-import { Inter, Tinos } from 'next/font/google'
+import { Inter, Playfair_Display as PlayfairDisplay } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-const tinos = Tinos({ weight: ['400', '700'], subsets: ['latin'] })
+const playfair = PlayfairDisplay({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+})
 
 export const layout = {
   fonts: {
     default: inter,
-    highlight: tinos,
+    highlight: playfair,
   },
   header: true,
   cover: true,
